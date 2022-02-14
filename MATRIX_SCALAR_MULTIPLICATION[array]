@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+  using namespace std;
+  
+  int main(){
+    
+    int M, N , K;
+    int mat[M][N];
+    cin>>M>>N>>K;
+    
+     
+    for(int i = 0 ; i<M; i++){
+      for(int j =0; j<N; j++){
+    cin>>mat[i][j];
+      }
+    }
+    
+    for(int i=0; i<M; i++){
+     for(int j=0; j<N; j++){
+     mat[i][j]= mat[i][j]*K;
+    cout<<mat[i][j]<<"\n";
+     }
+     cout<<endl;
+    }
+    return 0;
+  }
